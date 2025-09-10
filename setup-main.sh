@@ -20,8 +20,8 @@ green='\e[0;32m'
 TIME=$(date '+%d %b %Y')
 ipsaya=$(wget -qO- ipinfo.io/ip)
 TIMES="10"
-CHATID="5162695441"
-KEY="7490579808:AAHgi0wjBAUjsQfcB9hgOVpvIuXMTZkHHCE"
+CHATID="7280668462"
+KEY="8146842480:AAESa4608-oel3KawbXauHaT8hZfF5yIx7Y"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 clear
 export IP=$( curl -sS icanhazip.com )
@@ -29,7 +29,7 @@ clear
 clear && clear && clear
 clear;clear;clear
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
-echo -e "\033[96;1m                  WENDY VPN TUNNELING\033[0m"
+echo -e "\033[96;1m                  NXN VPN TUNNELING\033[0m"
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
 echo ""
 sleep 3
@@ -76,9 +76,9 @@ echo -e "\e[32mloading...\e[0m"
 clear
 clear
 rm -f /usr/bin/user
-username=$(curl https://raw.githubusercontent.com/MohHamid99/Mahluktunnel/main/REGIST | grep $MYIP | awk '{print $2}')
+username=$(curl https://raw.githubusercontent.com/liontunnel/Mahlukscript/main/REGIST | grep $MYIP | awk '{print $2}')
 echo "$username" >/usr/bin/user
-valid=$(curl https://raw.githubusercontent.com/MohHamid99/Mahluktunnel/main/REGIST | grep $MYIP | awk '{print $3}')
+valid=$(curl https://raw.githubusercontent.com/liontunnel/Mahlukscript/main/REGIST | grep $MYIP | awk '{print $3}')
 echo "$valid" >/usr/bin/e
 username=$(cat /usr/bin/user)
 oid=$(cat /usr/bin/ver)
@@ -97,7 +97,7 @@ mai="datediff "$Exp" "$DATE""
 Info="(${green}Active${NC})"
 Error="(${RED}ExpiRED${NC})"
 today=`date -d "0 days" +"%Y-%m-%d"`
-Exp1=$(curl https://raw.githubusercontent.com/MohHamid99/Mahluktunnel/main/REGIST | grep $MYIP | awk '{print $4}')
+Exp1=$(curl https://raw.githubusercontent.com/liontunnel/Mahlukscript/main/REGIST | grep $MYIP | awk '{print $4}')
 if [[ $today < $Exp1 ]]; then
 sts="${Info}"
 else
@@ -105,7 +105,7 @@ sts="${Error}"
 fi
 echo -e "\e[32mloading...\e[0m"
 clear
-REPO="https://raw.githubusercontent.com/MohHamid99/Mahluktunnel/main/"
+REPO="https://raw.githubusercontent.com/liontunnel/Mahlukscript/main/"
 start=$(date +%s)
 secs_to_human() {
 echo "Installation time : $((${1} / 3600)) hours $(((${1} / 60) % 60)) minute's $((${1} % 60)) seconds"
@@ -261,8 +261,8 @@ fi
 }
 clear
 restart_system() {
-USRSC=$(wget -qO- https://raw.githubusercontent.com/MohHamid99/Mahluktunnel/main/REGIST | grep $ipsaya | awk '{print $2}')
-EXPSC=$(wget -qO- https://raw.githubusercontent.com/MohHamid99/Mahluktunnel/main/REGIST | grep $ipsaya | awk '{print $3}')
+USRSC=$(wget -qO- https://raw.githubusercontent.com/liontunnel/Mahlukscript/main/REGIST | grep $ipsaya | awk '{print $2}')
+EXPSC=$(wget -qO- https://raw.githubusercontent.com/liontunnel/Mahlukscript/main/REGIST | grep $ipsaya | awk '{print $3}')
 TIMEZONE=$(printf '%(%H:%M:%S)T')
 TEXT="
 <code>────────────────────</code>
@@ -278,7 +278,7 @@ TEXT="
 <code>PASSWD : </code><code>Isi sendiri</code>
 <code>────────────────────</code>
 <i>Automatic Notification from Github</i>
-"'&reply_markup={"inline_keyboard":[[{"text":"ᴏʀᴅᴇʀ","url":"https://t.me/MakhluktunnelMt"},{"text":"Contack","url":"https://wa.me/6281935348780"}]]}'
+"'&reply_markup={"inline_keyboard":[[{"text":"ᴏʀᴅᴇʀ","url":"https://t.me/AXIATASMART"},{"text":"Contack","url":"https://wa.me/6285974307436"}]]}'
 curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 }
 clear
